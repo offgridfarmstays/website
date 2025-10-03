@@ -35,14 +35,6 @@ export default function Process() {
   return (
     <section className="py-20 px-6 bg-gray-50">
       <div className="max-w-7xl mx-auto">
-        <div className="mb-12">
-          <img
-            src="/assets/diagrams/construction_timeline.png"
-            alt="Construction Timeline"
-            className="w-full max-w-5xl mx-auto rounded-xl shadow-lg"
-          />
-        </div>
-
         <div className="grid md:grid-cols-5 gap-6">
           {phases.map((phase, index) => (
             <div key={index} className="relative">
