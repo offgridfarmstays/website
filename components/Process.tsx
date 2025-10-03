@@ -3,31 +3,31 @@ export default function Process() {
     {
       number: '01',
       title: 'Discovery & Assessment',
-      description: 'Free property evaluation, solar potential analysis, and feasibility report.',
+      description: 'Site survey including water resources (wells, creeks, rainfall), soil percolation testing, solar potential, and topography analysis.',
       timeline: 'Week 1-2',
     },
     {
       number: '02',
       title: 'Custom Design',
-      description: '3D renderings, floor plans, energy system design, and itemized budget.',
+      description: '3D renderings, floor plans, energy systems (solar, hydro), water supply, septic design, and integrated systems engineering.',
       timeline: 'Week 3-6',
     },
     {
       number: '03',
       title: 'Permitting',
-      description: 'Complete handling of zoning applications, building permits, and regulatory approvals.',
+      description: 'Building permits, septic approvals, well drilling permits, water rights verification, and environmental compliance.',
       timeline: 'Week 7-18',
     },
     {
       number: '04',
       title: 'Construction',
-      description: 'Foundation to finish, contractor management, energy system installation.',
+      description: 'Well drilling, septic installation, utility trenching, foundation work, building construction, solar and hydro systems.',
       timeline: 'Week 19-34',
     },
     {
       number: '05',
       title: 'Launch & Earn',
-      description: 'AirBTC listing activation, bitcoin mining commissioning, revenue starts flowing.',
+      description: 'System commissioning, water quality testing, AirBTC listing activation, bitcoin mining setup.',
       timeline: 'Week 35-38',
     },
   ]
