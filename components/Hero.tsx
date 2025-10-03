@@ -4,7 +4,7 @@ export default function Hero() {
       <div
         className="absolute inset-0 z-0"
         style={{
-          backgroundImage: 'linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(/assets/banners/heat_flow_lifestyle.png)',
+          backgroundImage: 'linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(/assets/banners/offgrid.cabin.hottub.jpg)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
