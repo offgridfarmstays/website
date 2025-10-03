@@ -50,14 +50,14 @@ export default function EnergySystem() {
                 <svg className="w-6 h-6 text-bitcoin" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clipRule="evenodd" />
                 </svg>
-                Heat Reuse Applications
+                Immersion Cooling & Heat Reuse
               </h3>
               <p className="text-gray-700 mb-4">
-                Immersion-cooled bitcoin mining captures 95% of heat energy. This free heat provides domestic hot water, radiant floor heating, and spa/hot tub warming year-round.
+                ASIC miners submerged in dielectric fluid capture 95% of heat energy through heat exchangers. This free heat provides domestic hot water, radiant floor heating, and spa/hot tub warming year-round.
               </p>
               <img
-                src="/assets/banners/hot_tub_winter.png"
-                alt="Bitcoin mining waste heat reused for hot tub"
+                src="/assets/banners/immersion_cooling.png"
+                alt="Immersion cooling system with bitcoin miners in dielectric fluid"
                 className="w-full rounded-lg"
               />
             </div>

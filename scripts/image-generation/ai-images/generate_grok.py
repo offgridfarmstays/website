@@ -85,17 +85,18 @@ PROMPTS = {
         'quality': 'hd'
     },
 
-    'hot_tub_winter': {
-        'prompt': """Bitcoin mining heat-powered hot tub on a mountain deck in winter.
-        Stunning mountaintop location with dramatic snow-covered peaks in background.
-        Steam rising from hot tub creating atmospheric effect in cold air.
-        Wooden deck covered in fresh snow around the edges.
-        Modern cedar hot tub with people relaxing inside, enjoying the view.
-        Small solar panels visible on nearby cabin structure.
-        Technical detail: Pipes connecting to bitcoin mining equipment housing (subtle, integrated).
-        Golden hour lighting, warm sunset glow on mountains.
-        Professional architectural photography, realistic and aspirational.
-        Color palette: White snow, warm cedar tones, golden sunset light, steam atmosphere.""",
+    'immersion_cooling': {
+        'prompt': """Bitcoin mining immersion cooling system for off-grid retreat.
+        Professional industrial photography showing immersion cooling tank setup.
+        Reference Fog Hashing immersion cooling equipment design.
+        Clear mineral oil or dielectric fluid with ASIC miners submerged inside transparent tank.
+        Visible heat exchanger pipes and fluid circulation system.
+        Clean, professional installation in modern mechanical room.
+        Technical equipment with industrial aesthetic, pipes and valves visible.
+        Warm LED lighting highlighting the fluid and equipment.
+        Professional product photography style, sharp focus on technical details.
+        Color palette: Clear fluid, metallic equipment, copper pipes, industrial gray/silver tones.
+        No outdoor elements, pure technical equipment focus.""",
         'size': '1792x1024',
         'quality': 'hd'
     },

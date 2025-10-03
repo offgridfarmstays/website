@@ -4,7 +4,7 @@ export default function DualRevenue() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Two Income Streams From One Property
+            Guest Bookings + Bitcoin Mined
           </h2>
           <p className="text-xl text-gray-600">
             Your retreat generates revenue while guests enjoy luxury off-grid experiences
