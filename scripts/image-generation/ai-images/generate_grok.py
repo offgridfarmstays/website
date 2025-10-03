@@ -100,6 +100,78 @@ PROMPTS = {
         'size': '1792x1024',
         'quality': 'hd'
     },
+
+    'hot_tub_heat_reuse': {
+        'prompt': """Remote off-grid mountain hot tub at dusk with steam rising, surrounded by wilderness.
+        Wooden hot tub on elevated deck overlooking forested mountain valley with dramatic sunset sky.
+        In the technical cutaway/overlay section: immersion cooling tank with ASIC miners visible through transparent panel,
+        heat exchanger pipes connecting underground to the hot tub, showing the heat flow path with subtle glowing orange lines.
+        Split composition: 60% scenic natural beauty (hot tub, mountains, steam, golden hour lighting),
+        40% technical illustration (Fog Hashing-style immersion tank, copper heat exchange pipes, thermal flow arrows).
+        Atmospheric steam and mist blend the two sections together naturally.
+        Professional architectural photography merged with technical diagram aesthetic.
+        Color palette: Warm wood tones, deep blue water, golden sunset light, orange/copper heat flow indicators,
+        silver/metallic equipment, misty atmospheric elements.
+        Style: Aspirational lifestyle photography meets engineering diagram, both beautiful and educational.""",
+        'size': '1792x1024',
+        'quality': 'hd'
+    },
+
+    'bitcoin_mining_heat_luxury': {
+        'prompt': """Off-grid luxury retreat at twilight showing the complete bitcoin heat reuse system in context.
+        Modern cabin with large windows glowing warmly, solar panels on roof, mountains in background.
+        Foreground: Steaming outdoor hot tub with person relaxing, surrounded by natural stone and wood decking.
+        Middle ground: Semi-transparent technical overlay showing underground immersion cooling system,
+        with Fog Hashing-style tanks visible, heat exchanger coils, and thermal energy flow paths illustrated with subtle orange glow lines
+        connecting the mining equipment to hot water systems, radiant floor heating, and the hot tub.
+        Background: Mountain landscape fading to dusk with first stars appearing.
+        Composition balances luxury lifestyle with technical sophistication.
+        Not overly technical - maintain aspirational, inviting aesthetic while showing the innovation.
+        Color palette: Warm cabin lights (golden), hot tub steam (white/blue), heat flow (orange/amber),
+        equipment (industrial silver), natural elements (wood, stone, mountain blues/purples).
+        Atmospheric lighting: Twilight hour with both natural and artificial light, steam adding mystery and comfort.
+        Photography style: Architectural Digest meets WIRED magazine - beautiful, sophisticated, technically impressive.""",
+        'size': '1792x1024',
+        'quality': 'hd'
+    },
+
+    'heat_flow_lifestyle': {
+        'prompt': """Hero banner showing off-grid retreat hot tub experience powered by bitcoin mining heat.
+        Wide landscape format: Left side shows wooden hot tub on mountain deck with couple enjoying sunset views,
+        steam rising beautifully into golden hour sky, dramatic mountain vista background.
+        Right side transitions into cutaway/technical view showing the heat source:
+        Fog Hashing immersion cooling tanks in mechanical room below deck,
+        ASIC miners submerged in clear dielectric fluid, heat exchanger coils visible,
+        copper pipes running upward with subtle animated-style heat flow indicators (orange glow, rising wave pattern).
+        Center section blends both worlds: deck structure, plumbing, and thermal system integration visible but elegant.
+        The technical elements should be sophisticated and clean, not cluttered - think Apple product reveal aesthetic
+        combined with National Geographic nature photography.
+        Steam from hot tub creates natural transition between lifestyle and technical zones.
+        Lighting: Golden hour warmth on left, subtle industrial LED lighting on right, heat glow connecting both.
+        Overall feel: This is where cutting-edge technology meets ultimate relaxation.
+        Inspirational, luxurious, innovative, warm, inviting, yet clearly demonstrates the technical innovation.""",
+        'size': '1792x1024',
+        'quality': 'hd'
+    },
+
+    'winter_hot_tub_bitcoin_heated': {
+        'prompt': """Winter night scene: Off-grid cabin covered in snow, warm lights glowing from windows.
+        Outdoor hot tub on snow-covered deck, steam billowing dramatically into cold night air,
+        person relaxing in hot tub under starry sky with Northern Lights or Milky Way visible.
+        Technical overlay showing underground/basement mining operation:
+        Fog Hashing immersion cooling system with bitcoin miners generating heat,
+        insulated pipes carrying hot water to surface, heating the hot tub year-round.
+        The contrast between freezing mountain winter and steaming hot comfort demonstrates the power of heat reuse.
+        Subtle technical diagram elements: heat flow arrows, temperature gradients, equipment labels (minimal, elegant).
+        Mood: Magical winter solitude meets innovative engineering.
+        Snow and steam create atmospheric depth and mystery.
+        Color palette: Cool blues (night, snow, water), warm oranges (cabin lights, heat flow, equipment glow),
+        white (steam, snow), silver (mining equipment).
+        Photography style: Outdoor lifestyle magazine cover meets technical innovation showcase.
+        Both beautiful and impressive from engineering perspective.""",
+        'size': '1792x1024',
+        'quality': 'hd'
+    },
 }
 
 
