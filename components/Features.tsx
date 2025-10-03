@@ -29,7 +29,7 @@ export default function Features() {
     },
     {
       title: 'Revenue Activation',
-      description: 'AirBTC listing optimization, bitcoin mining commissioning, owner training. Start earning from day one after completion.',
+      description: 'Rental listing optimization, bitcoin mining commissioning, owner training. Start earning from day one after completion.',
       icon: (
         <svg className="w-12 h-12" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -46,7 +46,7 @@ export default function Features() {
             Bitcoin-Powered Retreats That Pay for Themselves
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Dual income streams: guest bookings through AirBTC and bitcoin earnings from excess solar production
+            Dual income streams: guest rental bookings and bitcoin earnings
           </p>
         </div>
 

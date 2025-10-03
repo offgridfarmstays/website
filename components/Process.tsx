@@ -27,7 +27,7 @@ export default function Process() {
     {
       number: '05',
       title: 'Launch & Earn',
-      description: 'System commissioning, water quality testing, AirBTC listing activation, bitcoin mining setup.',
+      description: 'System commissioning, water quality testing, rental listing activation, bitcoin mining setup.',
       timeline: 'Week 35-38',
     },
   ]
