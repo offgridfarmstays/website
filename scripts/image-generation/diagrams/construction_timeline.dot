@@ -12,47 +12,12 @@ digraph Timeline {
     node [fontname="Arial", fontsize=11, fixedsize=true, width=1.8, height=1.8];
 
     // Phase nodes (circles)
-    discovery [label="Discovery\n━━━━━\nWeek 1-2\n\n• Site Visit\n• Assessment\n• Feasibility", shape=circle, fillcolor="#888888", style=filled, fontcolor=white];
-    design [label="Design\n━━━━━\nWeek 3-6\n\n• 3D Renders\n• Engineering\n• Proposal", shape=circle, fillcolor="#4682B4", style=filled, fontcolor=white];
-    permitting [label="Permitting\n━━━━━\nWeek 7-18\n\n• Applications\n• Reviews\n• Approvals", shape=circle, fillcolor="#FF8C00", style=filled, fontcolor=white];
-    construction [label="Construction\n━━━━━\nWeek 19-34\n\n• Site Prep\n• Build\n• Systems", shape=circle, fillcolor="#228B22", style=filled, fontcolor=white];
-    launch [label="Launch\n━━━━━\nWeek 35-38\n\n• Training\n• AirBTC\n• First Guest", shape=circle, fillcolor="#FFD700", style=filled, fontcolor=black];
+    discovery [label="01", shape=circle, fillcolor="#888888", style=filled, fontcolor=white, fontsize=24];
+    design [label="02", shape=circle, fillcolor="#4682B4", style=filled, fontcolor=white, fontsize=24];
+    permitting [label="03", shape=circle, fillcolor="#FF8C00", style=filled, fontcolor=white, fontsize=24];
+    construction [label="04", shape=circle, fillcolor="#228B22", style=filled, fontcolor=white, fontsize=24];
+    launch [label="05", shape=circle, fillcolor="#FFD700", style=filled, fontcolor=black, fontsize=24];
 
     // Connections
     discovery -> design -> permitting -> construction -> launch [penwidth=3, color="#4A7C59"];
-
-    // Week markers (invisible nodes for alignment)
-    {
-        rank=same;
-        discovery;
-        week0 [label="Week 0", shape=plaintext, fontsize=10];
-    }
-    {
-        rank=same;
-        design;
-        week6 [label="Week 6", shape=plaintext, fontsize=10];
-    }
-    {
-        rank=same;
-        permitting;
-        week18 [label="Week 18", shape=plaintext, fontsize=10];
-    }
-    {
-        rank=same;
-        construction;
-        week34 [label="Week 34", shape=plaintext, fontsize=10];
-    }
-    {
-        rank=same;
-        launch;
-        week38 [label="Week 38", shape=plaintext, fontsize=10];
-    }
-
-    // Timeline axis
-    week0 -> week6 -> week18 -> week34 -> week38 [style=invis];
-
-    // Title
-    labelloc="t";
-    label=<<b>Construction Timeline: Discovery to Launch</b><br/>Average Duration: 6-8 Months>;
-    fontsize=16;
 }
