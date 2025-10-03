@@ -101,12 +101,11 @@ export default function ContactCTA() {
           <div className="grid md:grid-cols-2 gap-6 mb-6">
             <div>
               <label htmlFor="phone" className="block text-sm font-semibold mb-2">
-                Phone Number {formData.email ? '' : '*'}
+                Phone Number
               </label>
               <input
                 type="tel"
                 id="phone"
-                required={!formData.email}
                 className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
                 value={formData.phone}
                 onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
@@ -114,12 +113,12 @@ export default function ContactCTA() {
             </div>
             <div>
               <label htmlFor="email" className="block text-sm font-semibold mb-2">
-                Email {formData.phone ? '' : '*'}
+                Email *
               </label>
               <input
                 type="email"
                 id="email"
-                required={!formData.phone}
+                required
                 className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent"
                 value={formData.email}
                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
