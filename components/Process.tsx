@@ -33,7 +33,7 @@ export default function Process() {
   ]
 
   return (
-    <section className="py-20 px-6 bg-gray-50">
+    <section className="py-8 px-6 bg-gray-50">
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-5 gap-6">
           {phases.map((phase, index) => (
