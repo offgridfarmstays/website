@@ -18,27 +18,13 @@ digraph EnergyFlow {
     hydro [label="HYDRO", shape=ellipse, fillcolor="#4682B4", fontcolor=white, penwidth=3, color="#1E90FF", fontsize=13];
     geo [label="GEOTHERMAL", shape=ellipse, fillcolor="#228B22", fontcolor=white, penwidth=3, color="#32CD32", fontsize=13];
 
-    // Energy distribution label (rotated, positioned to side)
-    dist_label [label="ENERGY\nDISTRIBUTION", shape=plaintext, fontsize=10, fontcolor="#4A7C59"];
-
-    // Distribution nodes
-    retreat [label="Lights, Appliances\nHVAC, Water Heating", shape=box, fillcolor="#E8F4F8", color="#4682B4", penwidth=2, fontsize=10];
-    mining [label="ASIC Miners\nImmersion Cooled", shape=box, fillcolor="#FFF9E6", color="#F7931A", penwidth=2, fontsize=10];
-    battery [label="Nighttime Use\nBackup Power", shape=box, fillcolor="#E8F8E8", color="#228B22", penwidth=2, fontsize=10];
-
-    // Section labels as separate nodes
-    retreat_label [label="RETREAT", shape=plaintext, fontsize=9, fontcolor="#4682B4"];
-    mining_label [label="BITCOIN MINING", shape=plaintext, fontsize=9, fontcolor="#F7931A"];
-    battery_label [label="STORAGE", shape=plaintext, fontsize=9, fontcolor="#228B22"];
-
-    // Heat reuse label
-    heat_label [label="HEAT\nREUSE", shape=plaintext, fontsize=10, fontcolor="#FF4500"];
+    // Distribution nodes with titles inside
+    retreat [label="RETREAT\n━━━━━\nLights, Appliances\nHVAC, Water Heating", shape=box, fillcolor="#E8F4F8", color="#4682B4", penwidth=2, fontsize=10];
+    mining [label="BITCOIN MINING\n━━━━━\nASIC Miners\nImmersion Cooled", shape=box, fillcolor="#FFF9E6", color="#F7931A", penwidth=2, fontsize=10];
+    battery [label="STORAGE\n━━━━━\nNighttime Use\nBackup Power", shape=box, fillcolor="#E8F8E8", color="#228B22", penwidth=2, fontsize=10];
 
     // Heat reuse node
-    heat [label="Waste Heat Capture\nFrom Mining", shape=box, fillcolor="#FFE4B5", color="#FF4500", penwidth=2, fontsize=10];
-
-    // Heat applications label
-    heat_apps_label [label="HEAT\nAPPLICATIONS", shape=plaintext, fontsize=10, fontcolor="#FF4500"];
+    heat [label="HEAT REUSE\n━━━━━\nWaste Heat Capture\nFrom Mining", shape=box, fillcolor="#FFE4B5", color="#FF4500", penwidth=2, fontsize=10];
 
     // Heat applications
     hotwater [label="Hot Water", shape=box, fillcolor="#FFE4E1", color="#FF6347", penwidth=1.5, fontsize=10];
@@ -48,15 +34,11 @@ digraph EnergyFlow {
     // Revenue
     revenue [label="GUEST BOOKINGS\n+\nBITCOIN EARNINGS", shape=box, style="filled,rounded", fillcolor="#90EE90", color="#228B22", penwidth=3, fontsize=11];
 
-    // Badge
-    badge [label="100% RENEWABLE\nZERO WASTE", shape=box, style="filled,rounded", fillcolor="#4A7C59", fontcolor=white, penwidth=2, fontsize=10];
-
     // Rank groupings
     {rank=same; solar; hydro; geo;}
-    {rank=same; dist_label; retreat_label; mining_label; battery_label;}
     {rank=same; retreat; mining; battery;}
-    {rank=same; heat_label; heat;}
-    {rank=same; heat_apps_label; hotwater; heating; hottub;}
+    {rank=same; heat;}
+    {rank=same; hotwater; heating; hottub;}
 
     // Energy source connections to distribution
     solar -> retreat [penwidth=2, color="#FFD700"];
@@ -70,21 +52,13 @@ digraph EnergyFlow {
     geo -> retreat [penwidth=2, color="#228B22"];
     geo -> mining [penwidth=2, color="#228B22"];
 
-    // Label to node invisible connections for positioning
-    dist_label -> retreat_label [style=invis];
-    retreat_label -> retreat [style=invis];
-    mining_label -> mining [style=invis];
-    battery_label -> battery [style=invis];
-
     // Heat connections
     mining -> heat [penwidth=3, color="#FF4500"];
-    heat_label -> heat [style=invis];
 
     // Heat applications
     heat -> hotwater [penwidth=2, color="#FF4500"];
     heat -> heating [penwidth=2, color="#FF4500"];
     heat -> hottub [penwidth=2, color="#FF4500"];
-    heat_apps_label -> hotwater [style=invis];
 
     // Revenue connections
     retreat -> revenue [style=dashed, penwidth=1.5];

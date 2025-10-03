@@ -12,7 +12,7 @@ export default function Hero() {
 
       <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">
         <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 opacity-95 max-w-4xl mx-auto leading-relaxed">
-          We build bitcoin-powered off-grid retreats with solar energy, geothermal systems, and guest booking integration—handling permitting, construction, and everything in between.
+          We build bitcoin-powered off-grid retreats.
         </h1>
 
         <a
