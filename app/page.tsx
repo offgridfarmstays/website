@@ -1,6 +1,5 @@
 import Hero from '@/components/Hero'
 import Features from '@/components/Features'
-import DualRevenue from '@/components/DualRevenue'
 import Process from '@/components/Process'
 import OffGridInfrastructure from '@/components/OffGridInfrastructure'
 import EnergySystem from '@/components/EnergySystem'
@@ -13,7 +12,6 @@ export default function Home() {
     <main className="min-h-screen">
       <Hero />
       <Features />
-      <DualRevenue />
       <Process />
       <OffGridInfrastructure />
       <EnergySystem />
