@@ -40,7 +40,7 @@ export default function Process() {
             How It Works
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            From consultation to first guest in 6-8 months
+            A streamlined process from initial consultation to your first guests
           </p>
         </div>
 

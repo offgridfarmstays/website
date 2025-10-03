@@ -11,8 +11,8 @@ export default function DualRevenue() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
-          <div className="space-y-6">
+        <div className="max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-blue-50 p-8 rounded-xl">
               <h3 className="text-2xl font-bold mb-4 text-blue-900">Guest Bookings</h3>
               <ul className="space-y-3 text-gray-700">
@@ -60,14 +60,6 @@ export default function DualRevenue() {
                 </li>
               </ul>
             </div>
-          </div>
-
-          <div className="flex justify-center">
-            <img
-              src="/assets/diagrams/dual_revenue_model.svg"
-              alt="Dual Revenue Model Diagram"
-              className="w-full max-w-lg"
-            />
           </div>
         </div>
       </div>
