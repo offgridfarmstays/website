@@ -35,15 +35,6 @@ export default function Process() {
   return (
     <section className="py-20 px-6 bg-gray-50">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            How It Works
-          </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            A streamlined process from initial consultation to your first guests
-          </p>
-        </div>
-
         <div className="mb-12">
           <img
             src="/assets/diagrams/construction_timeline.png"
