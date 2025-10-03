@@ -1,0 +1,57 @@
+// Permitting Process Flowchart for Offgrid Farmstays
+// Generate with: dot -Tpng permitting_flowchart.dot -o ../../assets/diagrams/permitting_flowchart.png
+
+digraph PermittingProcess {
+    // Graph settings
+    rankdir=TB;
+    bgcolor="transparent";
+    fontname="Arial";
+    node [fontname="Arial", fontsize=12];
+    edge [fontname="Arial", fontsize=10];
+
+    // Node styles
+    node [shape=box, style=filled, fillcolor="#E8F4F8", color="#4A7C59", penwidth=2];
+
+    // Start/End nodes
+    start [label="Start:\nProperty Assessment", shape=ellipse, fillcolor="#4A7C59", fontcolor=white, fontsize=14];
+    end [label="Construction\nCan Begin!", shape=ellipse, fillcolor="#4A7C59", fontcolor=white, fontsize=14];
+
+    // Process nodes
+    preapp [label="Pre-Application\nMeeting\n\nWeek 1", fillcolor="#E8F4F8"];
+    building [label="Submit Building\nPermit Application\n\nWeek 4-8", fillcolor="#E8F4F8"];
+    review [label="Engineering\nPlan Review\n\nWeek 8-12", fillcolor="#E8F4F8"];
+    septic [label="Septic System\nApproval\n\nWeek 8-12", fillcolor="#E8F4F8"];
+    electrical [label="Electrical\nPermit\n\nWeek 10-14", fillcolor="#E8F4F8"];
+    final [label="Final Permit\nApproval\n\nWeek 12-18", fillcolor="#90EE90", penwidth=3];
+    variance [label="Apply for\nZoning Variance\n\nWeek 2-8", fillcolor="#FFE4B5"];
+    revise [label="Submit Plan\nRevisions\n\nWeek 10-14", fillcolor="#FFE4B5"];
+
+    // Decision nodes
+    zoning [label="Zoning\nCompliant?", shape=diamond, fillcolor="#FFF9E6", color="#F7931A", penwidth=2];
+    approved [label="Plans\nApproved?", shape=diamond, fillcolor="#FFF9E6", color="#F7931A", penwidth=2];
+
+    // Flow
+    start -> preapp [label="Week 1"];
+    preapp -> zoning;
+    zoning -> variance [label="NO", color=red, fontcolor=red];
+    zoning -> building [label="YES", color=green, fontcolor=green];
+    variance -> building [label="Approved"];
+    building -> review;
+    review -> approved;
+    approved -> revise [label="REVISIONS\nNEEDED", color=orange, fontcolor=orange];
+    revise -> review;
+    approved -> septic [label="APPROVED", color=green, fontcolor=green];
+    approved -> electrical [label="APPROVED", color=green, fontcolor=green];
+    septic -> final;
+    electrical -> final;
+    final -> end;
+
+    // Notes
+    note1 [label="WE HANDLE THIS\nENTIRE PROCESS", shape=box, style="filled,rounded", fillcolor="#FFF9E6", color="#F7931A", penwidth=2, fontsize=11];
+    note1 -> preapp [style=dashed, color="#F7931A"];
+
+    // Title
+    labelloc="t";
+    label=<<b>Permitting Process Flowchart</b><br/>Offgrid Farmstays - Typical Timeline: 12-18 Weeks>;
+    fontsize=16;
+}
