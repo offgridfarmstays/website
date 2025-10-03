@@ -52,14 +52,9 @@ export default function EnergySystem() {
                 </svg>
                 Immersion Cooling & Heat Reuse
               </h3>
-              <p className="text-gray-700 mb-4">
+              <p className="text-gray-700">
                 ASIC miners submerged in dielectric fluid capture 95% of heat energy through heat exchangers. This free heat provides domestic hot water, radiant floor heating, and spa/hot tub warming year-round.
               </p>
-              <img
-                src="/assets/banners/immersion_cooling.png"
-                alt="Immersion cooling system with bitcoin miners in dielectric fluid"
-                className="w-full rounded-lg"
-              />
             </div>
           </div>
         </div>
