@@ -11,14 +11,6 @@ export default function EnergySystem() {
           </p>
         </div>
 
-        <div className="mb-12">
-          <img
-            src="/assets/banners/hot_tub_heat_reuse.png"
-            alt="Bitcoin mining heat reuse powering mountain hot tub"
-            className="w-full rounded-xl shadow-2xl"
-          />
-        </div>
-
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <img
