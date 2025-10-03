@@ -11,13 +11,9 @@ export default function Hero() {
       />
 
       <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 leading-tight">
-          Turn Idle Land Into Passive Income
-        </h1>
-
-        <p className="text-lg sm:text-xl md:text-2xl mb-8 opacity-95 max-w-4xl mx-auto">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-8 opacity-95 max-w-4xl mx-auto leading-relaxed">
           We build bitcoin-powered off-grid retreats with solar energy, geothermal systems, and guest booking integration—handling permitting, construction, and everything in between.
-        </p>
+        </h1>
 
         <a
           href="#contact"
