@@ -4,6 +4,7 @@ import DualRevenue from '@/components/DualRevenue'
 import Process from '@/components/Process'
 import OffGridInfrastructure from '@/components/OffGridInfrastructure'
 import EnergySystem from '@/components/EnergySystem'
+import HeatReuseShowcase from '@/components/HeatReuseShowcase'
 import ContactCTA from '@/components/ContactCTA'
 import Footer from '@/components/Footer'
 
@@ -16,6 +17,7 @@ export default function Home() {
       <Process />
       <OffGridInfrastructure />
       <EnergySystem />
+      <HeatReuseShowcase />
       <ContactCTA />
       <Footer />
     </main>
