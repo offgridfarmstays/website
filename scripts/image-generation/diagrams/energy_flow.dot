@@ -12,10 +12,10 @@ digraph EnergyFlow {
     node [fontname="Arial", fontsize=11, style=filled];
 
     // Source node
-    sun [label="SOLAR ENERGY\n━━━━━\n2,400 kWh/month", shape=ellipse, fillcolor="#FFD700", fontcolor=black, penwidth=3, color="#FF8C00", fontsize=13];
+    sun [label="SOLAR ENERGY", shape=ellipse, fillcolor="#FFD700", fontcolor=black, penwidth=3, color="#FF8C00", fontsize=13];
 
     // Solar panels
-    solar [label="SOLAR PANELS\n━━━━━\n18 kW Array\n100% Production", shape=box, fillcolor="#FFA500", fontcolor=white, penwidth=2];
+    solar [label="SOLAR PANELS\n━━━━━\nOversized Array\n100% Production", shape=box, fillcolor="#FFA500", fontcolor=white, penwidth=2];
 
     // Distribution
     subgraph cluster_distribution {
@@ -24,15 +24,15 @@ digraph EnergyFlow {
         color="#4A7C59";
         fontsize=12;
 
-        retreat [label="RETREAT\nConsumption\n━━━━━\n30%\n720 kWh/month\n\nLights, Appliances\nHVAC, Water Heating", shape=box, fillcolor="#E8F4F8", color="#4682B4", penwidth=2];
+        retreat [label="RETREAT\nConsumption\n━━━━━\nLights, Appliances\nHVAC, Water Heating", shape=box, fillcolor="#E8F4F8", color="#4682B4", penwidth=2];
 
-        mining [label="BITCOIN\nMining\n━━━━━\n60%\n1,440 kWh/month\n\n4-6 ASICs\nImmersion Cooled", shape=box, fillcolor="#FFF9E6", color="#F7931A", penwidth=2];
+        mining [label="BITCOIN\nMining\n━━━━━\nASIC Miners\nImmersion Cooled", shape=box, fillcolor="#FFF9E6", color="#F7931A", penwidth=2];
 
-        battery [label="STORAGE\nBattery\n━━━━━\n10%\n240 kWh/month\n\nNighttime Use\nBackup Power", shape=box, fillcolor="#E8F8E8", color="#228B22", penwidth=2];
+        battery [label="STORAGE\nBattery\n━━━━━\nNighttime Use\nBackup Power", shape=box, fillcolor="#E8F8E8", color="#228B22", penwidth=2];
     }
 
     // Heat reuse
-    heat [label="HEAT REUSE\n━━━━━\n95% Capture\n\nWaste Heat from Mining", shape=box, fillcolor="#FFE4B5", color="#FF4500", penwidth=2];
+    heat [label="HEAT REUSE\n━━━━━\nWaste Heat Capture\n\nFrom Mining", shape=box, fillcolor="#FFE4B5", color="#FF4500", penwidth=2];
 
     // Heat applications
     subgraph cluster_heat_use {
@@ -41,19 +41,19 @@ digraph EnergyFlow {
         color="#FF4500";
         fontsize=12;
 
-        hotwater [label="Hot Water\n60-100% of needs", shape=box, fillcolor="#FFE4E1"];
+        hotwater [label="Hot Water", shape=box, fillcolor="#FFE4E1"];
         heating [label="Space Heating\nRadiant Floors", shape=box, fillcolor="#FFE4E1"];
         hottub [label="Hot Tub/Spa\nYear-round", shape=box, fillcolor="#FFE4E1"];
     }
 
     // Output
-    revenue [label="REVENUE\n━━━━━\n\n$2,800 Guest Bookings\n$1,400 Bitcoin Earnings\n━━━━━\n$4,200/month Total", shape=box, style="filled,rounded", fillcolor="#90EE90", color="#228B22", penwidth=3, fontsize=12];
+    revenue [label="REVENUE\n━━━━━\n\nGuest Bookings\nBitcoin Earnings", shape=box, style="filled,rounded", fillcolor="#90EE90", color="#228B22", penwidth=3, fontsize=12];
 
     // Connections
     sun -> solar [label="Sunlight", penwidth=2, color="#FFD700"];
-    solar -> retreat [label="30%", penwidth=2, color="#4682B4", fontcolor="#4682B4"];
-    solar -> mining [label="60%", penwidth=3, color="#F7931A", fontcolor="#F7931A"];
-    solar -> battery [label="10%", penwidth=1, color="#228B22", fontcolor="#228B22"];
+    solar -> retreat [penwidth=2, color="#4682B4"];
+    solar -> mining [penwidth=3, color="#F7931A"];
+    solar -> battery [penwidth=1, color="#228B22"];
 
     mining -> heat [label="Waste Heat", penwidth=2, color="#FF4500", fontcolor="#FF4500"];
     heat -> hotwater [penwidth=1.5];
