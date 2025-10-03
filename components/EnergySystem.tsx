@@ -52,20 +52,14 @@ export default function EnergySystem() {
                 </svg>
                 Heat Reuse Applications
               </h3>
-              <p className="text-gray-700">
+              <p className="text-gray-700 mb-4">
                 Immersion-cooled bitcoin mining captures 95% of heat energy. This free heat provides domestic hot water, radiant floor heating, and spa/hot tub warming year-round.
               </p>
-            </div>
-
-            <div className="bg-blue-50 p-6 rounded-xl">
               <img
                 src="/assets/banners/hot_tub_winter.png"
-                alt="Hot tub powered by bitcoin mining heat"
-                className="w-full rounded-lg mb-3"
+                alt="Bitcoin mining waste heat reused for hot tub"
+                className="w-full rounded-lg"
               />
-              <p className="text-sm text-gray-600 text-center italic">
-                Bitcoin mining heat-powered hot tub - turning waste energy into luxury guest amenities
-              </p>
             </div>
           </div>
         </div>
