@@ -1,6 +1,6 @@
 export default function ContactCTA() {
   return (
-    <section id="contact" className="py-20 px-6 bg-gradient-to-br from-primary to-green-800 text-white">
+    <section id="contact" className="py-20 px-6 bg-gradient-to-br from-orange-600 to-orange-800 text-white">
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-4xl md:text-5xl font-bold mb-6">
           Ready to Transform Your Land?
