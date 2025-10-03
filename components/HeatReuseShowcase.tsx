@@ -12,11 +12,11 @@ export default function HeatReuseShowcase() {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8 mb-12">
-          <div className="relative overflow-hidden rounded-xl shadow-2xl">
+          <div className="relative overflow-hidden rounded-xl shadow-2xl h-fit">
             <img
               src="/assets/banners/winter_hot_tub_bitcoin_heated.png"
               alt="Winter hot tub powered by bitcoin mining heat under Northern Lights"
-              className="w-full h-full object-cover"
+              className="w-full h-auto"
             />
           </div>
 

@@ -26,19 +26,13 @@ digraph EnergyFlow {
     // Heat reuse node
     heat [label="HEAT REUSE\n━━━━━\nWaste Heat Capture\nFrom Mining", shape=box, fillcolor="#FFE4B5", color="#FF4500", penwidth=2, fontsize=10];
 
-    // Heat applications
-    hotwater [label="Hot Water", shape=box, fillcolor="#FFE4E1", color="#FF6347", penwidth=1.5, fontsize=10];
-    heating [label="Space Heating\nRadiant Floors", shape=box, fillcolor="#FFE4E1", color="#FF6347", penwidth=1.5, fontsize=10];
-    hottub [label="Hot Tub/Spa\nYear-round", shape=box, fillcolor="#FFE4E1", color="#FF6347", penwidth=1.5, fontsize=10];
-
     // Revenue
     revenue [label="GUEST BOOKINGS\n+\nBITCOIN EARNINGS", shape=box, style="filled,rounded", fillcolor="#90EE90", color="#228B22", penwidth=3, fontsize=11];
 
     // Rank groupings
     {rank=same; solar; hydro; geo;}
     {rank=same; retreat; mining; battery;}
-    {rank=same; heat;}
-    {rank=same; hotwater; heating; hottub;}
+    {rank=same; heat; revenue;}
 
     // Energy source connections to distribution
     solar -> retreat [penwidth=2, color="#FFD700"];
@@ -54,11 +48,6 @@ digraph EnergyFlow {
 
     // Heat connections
     mining -> heat [penwidth=3, color="#FF4500"];
-
-    // Heat applications
-    heat -> hotwater [penwidth=2, color="#FF4500"];
-    heat -> heating [penwidth=2, color="#FF4500"];
-    heat -> hottub [penwidth=2, color="#FF4500"];
 
     // Revenue connections
     retreat -> revenue [style=dashed, penwidth=1.5];
